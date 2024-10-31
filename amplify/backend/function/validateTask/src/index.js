@@ -9,7 +9,8 @@ function add(num1, num2){
 
 exports.handler = async (event) => {
     console.log(`EVENT: ${JSON.stringify(event)}`);
-    console.log("event is here!");
+    const num= add(60+9);
+    console.log("num: ", num);
     return {
         statusCode: 200,
     //  Uncomment below to enable CORS requests
