@@ -3,9 +3,7 @@
 /**
  * @type {import('@types/aws-lambda').APIGatewayProxyHandler}
  */
-function sum(num1,num2){
-    return num1+num2;
-}
+
 exports.handler = async (event) => {
     console.log(`EVENT: ${JSON.stringify(event)}`);
     console.log("event is here!");
