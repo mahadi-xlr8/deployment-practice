@@ -3,6 +3,9 @@
 /**
  * @type {import('@types/aws-lambda').APIGatewayProxyHandler}
  */
+function add(num1, num2){
+    return num1+num2;
+}
 
 exports.handler = async (event) => {
     console.log(`EVENT: ${JSON.stringify(event)}`);
