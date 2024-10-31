@@ -37,3 +37,39 @@ export const onDeleteTodo = /* GraphQL */ `
     }
   }
 `;
+export const onCreateHuman = /* GraphQL */ `
+  subscription OnCreateHuman($filter: ModelSubscriptionHumanFilterInput) {
+    onCreateHuman(filter: $filter) {
+      name
+      age
+      id
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;
+export const onUpdateHuman = /* GraphQL */ `
+  subscription OnUpdateHuman($filter: ModelSubscriptionHumanFilterInput) {
+    onUpdateHuman(filter: $filter) {
+      name
+      age
+      id
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;
+export const onDeleteHuman = /* GraphQL */ `
+  subscription OnDeleteHuman($filter: ModelSubscriptionHumanFilterInput) {
+    onDeleteHuman(filter: $filter) {
+      name
+      age
+      id
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;

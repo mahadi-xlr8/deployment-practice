@@ -33,3 +33,35 @@ export const listTodos = /* GraphQL */ `
     }
   }
 `;
+export const getHuman = /* GraphQL */ `
+  query GetHuman($id: ID!) {
+    getHuman(id: $id) {
+      name
+      age
+      id
+      createdAt
+      updatedAt
+      __typename
+    }
+  }
+`;
+export const listHumans = /* GraphQL */ `
+  query ListHumans(
+    $filter: ModelHumanFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    listHumans(filter: $filter, limit: $limit, nextToken: $nextToken) {
+      items {
+        name
+        age
+        id
+        createdAt
+        updatedAt
+        __typename
+      }
+      nextToken
+      __typename
+    }
+  }
+`;
