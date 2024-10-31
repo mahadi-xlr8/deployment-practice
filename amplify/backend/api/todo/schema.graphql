@@ -7,3 +7,22 @@ type Todo @model {
   name: String!
   description: String
 }
+
+
+type Human @model{
+  name: String!
+  age: Int!
+}
+
+type Response{
+  statusCode: Int
+  body: String
+}
+input testInput {
+  name: String
+}
+
+type Mutation {
+  triggerTest(input: testInput): Response @function(name: "test-${env}")
+}
+

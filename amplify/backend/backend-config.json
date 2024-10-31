@@ -41,6 +41,22 @@
     }
   },
   "parameters": {
+    "AMPLIFY_function_test_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "test"
+        }
+      ]
+    },
+    "AMPLIFY_function_test_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "test"
+        }
+      ]
+    },
     "AMPLIFY_function_validateTask_deploymentBucketName": {
       "usedBy": [
         {
